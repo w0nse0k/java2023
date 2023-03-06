@@ -20,6 +20,7 @@ public class SetEx {
       System.out.println(s);
     }
 
+    set1.forEach(e -> System.out.println(e));
     set1.forEach(System.out::println);
   }
 }

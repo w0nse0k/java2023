@@ -8,9 +8,9 @@ import java.util.Map;
  */
 public class MapEx {
   public static void main(String[] args) {
-    Student s1 = new Student(1, "황기태");
-    Student s2 = new Student(2, "이재문");
-    Student s3 = new Student(3, "김남윤");
+    Student s1 = new Student(1, "Jacob");
+    Student s2 = new Student(2, "Rachel");
+    Student s3 = new Student(3, "David");
 
     Map<Integer, Student> map1 = new HashMap<>();
     map1.put(1, s1);

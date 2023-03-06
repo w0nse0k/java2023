@@ -1,6 +1,5 @@
 package kr.mjc.jacob.basics.collections;
 
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -13,9 +12,9 @@ public class StudentSetEx {
     Student s2 = new Student(2, "David");
     Student s3 = new Student(1, "Rachel");
 
-    System.out.format("%08x\n", s1.hashCode());
-    System.out.format("%08x\n", s2.hashCode());
-    System.out.format("%08x\n", s3.hashCode());
+    System.out.format("%x\n", s1.hashCode());
+    System.out.format("%x\n", s2.hashCode());
+    System.out.format("%x\n", s3.hashCode());
 
     Set<Student> set1 = new HashSet<>();
     set1.add(s1);
