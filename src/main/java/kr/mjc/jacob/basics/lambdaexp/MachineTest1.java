@@ -1,6 +1,6 @@
 package kr.mjc.jacob.basics.lambdaexp;
 
-public class MachineTest {
+public class MachineTest1 {
 
   public static void main(String[] args) {
 
