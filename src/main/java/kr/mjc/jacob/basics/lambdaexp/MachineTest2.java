@@ -8,6 +8,7 @@ public class MachineTest2 {
 
     Machine machine = new Machine();
 
+    // anonymous class
     Consumer<String> c1 = new Consumer<>() {
       @Override
       public void accept(String name) {
@@ -17,10 +18,11 @@ public class MachineTest2 {
 
     machine.doTwice(c1, "Rachel");
 
+    // lambda expression
     Consumer<String> c2 = (name) -> System.out.println("Hello " + name);
     machine.doTwice(c2, "Jacob");
 
-    machine.doTwice((name) -> System.out.println(name), "David");
+    machine.doTwice((name) -> System.out.println("Hello " + name), "David");
 
     // method reference
     machine.doTwice(Hello::sayStaticHello, "Paul");

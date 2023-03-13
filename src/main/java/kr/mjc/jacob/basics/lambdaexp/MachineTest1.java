@@ -6,6 +6,7 @@ public class MachineTest1 {
 
     Machine machine = new Machine();
 
+    // anonymous class
     Runnable r1 = new Runnable() {
       @Override
       public void run() {
@@ -14,6 +15,7 @@ public class MachineTest1 {
     };
     machine.doTwice(r1);
 
+    // lambda expression
     Runnable r2 = () -> System.out.println("Hello David.");
     machine.doTwice(r2);
 
