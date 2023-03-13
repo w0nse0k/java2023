@@ -6,16 +6,16 @@ public class MachineTest1 {
 
     Machine machine = new Machine();
 
-    Runnable runnable1 = new Runnable() {
+    Runnable r1 = new Runnable() {
       @Override
       public void run() {
         System.out.println("Hello Jacob.");
       }
     };
-    machine.doTwice(runnable1);
+    machine.doTwice(r1);
 
-    Runnable runnable2 = () -> System.out.println("Hello David.");
-    machine.doTwice(runnable2);
+    Runnable r2 = () -> System.out.println("Hello David.");
+    machine.doTwice(r2);
 
     machine.doTwice(() -> System.out.println("Hello Rachel."));
 

@@ -8,17 +8,17 @@ public class MachineTest2 {
 
     Machine machine = new Machine();
 
-    Consumer<String> consumer1 = new Consumer<>() {
+    Consumer<String> c1 = new Consumer<>() {
       @Override
       public void accept(String name) {
         System.out.println("Hello " + name);
       }
     };
 
-    machine.doTwice(consumer1, "Rachel");
+    machine.doTwice(c1, "Rachel");
 
-    Consumer<String> consumer2 = (name) -> System.out.println("Hello " + name);
-    machine.doTwice(consumer2, "Jacob");
+    Consumer<String> c2 = (name) -> System.out.println("Hello " + name);
+    machine.doTwice(c2, "Jacob");
 
     machine.doTwice((name) -> System.out.println(name), "David");
 
